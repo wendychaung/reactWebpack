@@ -1,6 +1,9 @@
-import React from 'react';
+// import React from 'react';
 
+import React, { Component } from 'react';
+import { Editor } from 'react-draft-wysiwyg';
 import "../scss/form.scss"
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 class Forms extends  React.Component{
     constructor(props){
@@ -114,6 +117,13 @@ class Forms extends  React.Component{
                 {/*</div>*/}
                 <div>
                     描述：<textarea name="miaoshu"  value={this.state.miaoshu} cols="30" rows="10"  onChange={(e)=>this.handlechange(e)}/>
+                </div>
+                <div>
+                    富文本：<Editor
+                    // toolbar={{
+                    //     options: ['inline', 'blockType', 'fontSize', 'fontFamily', 'list', 'textAlign', 'colorPicker', 'link', 'embedded', 'emoji', 'image', 'remove', 'history'],
+                    // }}
+                />
                 </div>
                 <div>
                     <input type="submit" value="提交"/>

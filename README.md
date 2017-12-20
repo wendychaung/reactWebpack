@@ -3,7 +3,7 @@
 
 ### 样式如下
 
-<a href="https://wendychaung.github.io/reackWebpack/" target="_blank">DEMO</a>
+<a href="https://wendychaung.github.io/reactWebpack/" target="_blank">DEMO</a>
 
 
 

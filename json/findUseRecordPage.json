@@ -1,0 +1,22 @@
+/**
+ * 列表记录
+ *
+ * @url /listmap
+ *
+ * Parameter description and other instructions。
+ */
+{
+  "result":true,
+  "cur":"1",
+  "page_size":10,
+  "page_count":10,
+  "total":98,
+  "rows|10": [{
+    "id": "@integer(10000, 99999)",
+    "point":"@integer(0, 10)",
+    "price|100-500": 100,
+    "paper":"@cword('初高')中.试卷@cword('零一二三四五六七八九十')",
+    "buyTime":"@datetime()",
+    "userId":"@integer(10000, 99999)"
+  }]
+}

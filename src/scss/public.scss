@@ -1,0 +1,48 @@
+@import "~normalize-scss/sass/normalize";
+@include normalize();
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+nav{
+  @include clearfix();
+  li{
+    width: 200px;
+    float: left;
+    text-align: center;
+    line-height: 2em;
+  }
+}
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  width:1000px;
+  border:1px solid #ccc;
+}
+.maincontent{
+  width: 1000px;
+  margin: 0 auto;
+}
+nav{
+  @include clearfix();
+  li{
+    width: 200px;
+    float: left;
+    text-align: center;
+    line-height: 2em;
+  }
+}
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

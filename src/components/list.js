@@ -28,7 +28,7 @@ class Listall extends React.Component{
             page_count:myJson.page_count
         }
     }
-   resetData(){
+    resetData(){
         let tjobj={
             cur:this.state.current
         };
@@ -58,26 +58,25 @@ class Listall extends React.Component{
             this.resetData();
         }
     }
-
-        goNext(){
-            let cur = parseInt(this.state.current);
-            if(cur < this.state.page_count){
-                this.pageClick(cur + 1);
-                this.resetData();
-            }
+    goNext(){
+        let cur = parseInt(this.state.current);
+        if(cur < this.state.page_count){
+            this.pageClick(cur + 1);
+            this.resetData();
+        }
     }
-        goSwitchChange(e){
-            this.setState({goValue : e.target.value});
-            let value = e.target.value;
-            if(!/^[1-9]\d*$/.test(value)){
-                alert('页码只能输入大于1的正整数');
-            }else if(parseInt(value) > parseInt(this.state.page_count)){
-                alert('没有这么多页');
-            }else{
-                this.pageClick(value);
-                this.resetData();
-            }}
-
+    goSwitchChange(e){
+        this.setState({goValue : e.target.value});
+        let value = e.target.value;
+        if(!/^[1-9]\d*$/.test(value)){
+            alert('页码只能输入大于1的正整数');
+        }else if(parseInt(value) > parseInt(this.state.page_count)){
+            alert('没有这么多页');
+        }else{
+            this.pageClick(value);
+            this.resetData();
+        }
+    }
     render(){
         return <div>
         <ul className="listall">

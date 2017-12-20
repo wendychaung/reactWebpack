@@ -60,5 +60,4 @@ class Uploads extends React.Component{
         )
     }
 }
-
 export default Uploads;
